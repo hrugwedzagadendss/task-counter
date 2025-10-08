@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Counter from './Counter';
+import Counter from './08-10-2025/Counter';
 
 
 function App() {

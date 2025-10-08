@@ -1,12 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.send('Welcome to homepage from Express!');
+});
+
 router.get('/hello', (req, res) => {
   res.json({ message: 'Hello world!' });
 });
 
 router.post('/data', (req, res) => {
-  res.json({ received: req.body });
+  res.json({ received: req.body, message: 'Data received via POST.' });
 });
 
 router.put('/update/:id', (req, res) => {
